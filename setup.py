@@ -5,10 +5,12 @@ this_dir = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(this_dir, "README.md"), "r") as f:
     long_description = f.read()
 
+version = open("httpx_auth/version.py").readlines()[-1].split()[-1].strip("\"'")
+
 # More information on properties: https://packaging.python.org/distributing
 setup(
     name="httpx_auth",
-    version=open("httpx_auth/version.py").readlines()[-1].split()[-1].strip("\"'"),
+    version=f"{version}+async",
     author="Colin Bounouar",
     author_email="colin.bounouar.dev@gmail.com",
     maintainer="Colin Bounouar",
