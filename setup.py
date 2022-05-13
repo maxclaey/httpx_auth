@@ -10,7 +10,7 @@ version = open("httpx_auth/version.py").readlines()[-1].split()[-1].strip("\"'")
 # More information on properties: https://packaging.python.org/distributing
 setup(
     name="httpx_auth",
-    version=f"{version}+async",
+    version=f"{version}+asyncio",
     author="Colin Bounouar",
     author_email="colin.bounouar.dev@gmail.com",
     maintainer="Colin Bounouar",
